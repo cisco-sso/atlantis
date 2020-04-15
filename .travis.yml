@@ -1,0 +1,11 @@
+services:
+- docker
+script:
+- make docker-build
+deploy:
+- true:
+    tags: true
+  provider: script
+  script:
+  - make docker-push
+  skip_cleanup: true
