@@ -11,4 +11,4 @@ docker-push:
 	echo "$${DOCKER_PASSWORD}" | docker login -u "$${DOCKER_USERNAME}" --password-stdin
 	docker push $(IMAGE):$(BUILD_TAG)
 	docker tag $(IMAGE):$(BUILD_TAG) $(IMAGE):$(RELEASE_TAG)
-	docker push $(IMAGE):($RELEASE_TAG)
+	docker push $(IMAGE):$(RELEASE_TAG)
