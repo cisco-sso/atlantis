@@ -1,4 +1,4 @@
-FROM runatlantis/atlantis:v0.12.0
+FROM runatlantis/atlantis:v0.13.0
 
 RUN echo Installer extra utilities \
  && apk --no-cache add python3 jq \
