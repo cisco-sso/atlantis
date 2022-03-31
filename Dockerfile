@@ -1,4 +1,4 @@
-FROM runatlantis/atlantis:v0.15.1
+FROM ghcr.io/runatlantis/atlantis:v0.19.2
 
 RUN echo Installer extra utilities \
  && apk --no-cache add python3 py3-pip jq \
